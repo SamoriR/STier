@@ -1,0 +1,12 @@
+body{
+    background: linear-gradient(to bottom right, #001D4A, #27476E);
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.slide{
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
