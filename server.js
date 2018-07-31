@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', index);
+app.use('/api', index);
 
 // Set Static Path
 app.use(express.static(path.join(__dirname, '../../build')));
