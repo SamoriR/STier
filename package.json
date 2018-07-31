@@ -17,7 +17,7 @@
     "styled-components": "^3.3.3"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"nodemon ./src/server\"",
+    "start": "concurrently \"react-scripts start\" \"nodemon ./server\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
