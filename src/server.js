@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const index = require('./routes/index');
+const index = require('./Routes/index');
 const app = express();
 
 // BodyParser Middleware

@@ -65,6 +65,23 @@ const NavComp = (
 );
 
 class NavBar extends React.Component {
+  constructor(props) {
+    super(props);    
+    
+    this.scroll = this.scroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.scroll());
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scroll());
+  }
+
+  scroll(e){
+
+  }
   render() {
     return NavComp;
   }
