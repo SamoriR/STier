@@ -32,6 +32,12 @@ const textStyle= {
     "background": "linear-gradient(to top, #001D4A, #006992)"
 }
 
+const linkStyle= {
+    "margin": "0px",
+    "height": "0px",
+    "width": "0px"
+}
+
 class GalleryImg extends Component {
     constructor(props) {
         super(props);        
@@ -51,7 +57,7 @@ class GalleryImg extends Component {
 
     render() {
         return (<div style={divStyle}>
-                    <a href={this.props.href}>
+                    <a href={this.props.href} style={linkStyle}>
                     <img src={this.props.src} style={imgStyle} alt={this.props.alt} onMouseEnter={this.hoverOver} onMouseLeave={this.hoverOut}/>
                     </a>
                     <h5 style={textStyle}>{this.props.alt}</h5>

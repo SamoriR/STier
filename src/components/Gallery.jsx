@@ -41,7 +41,7 @@ class Gallery extends Component {
                 <GalleryImg href="http://www.crunchyroll.com/kill-la-kill" src={images["klk.jpg"]} alt="Kill la kill"/>
                 <GalleryImg href="http://www.crunchyroll.com/the-devil-is-a-part-timer/videos" src={images["diapt.jpg"]} alt="Devil is a part timer"/>
                 <GalleryImg href="http://www.crunchyroll.com/bungo-stray-dogs" src={images["bsd.jpg"]} alt="Bungo Stray Dogs"/>
-                <GalleryImg href="http://www.crunchyroll.com/seraph-of-the-end-vampire-reign" src={images["sote.png"]} alt=""/>
+                <GalleryImg href="http://www.crunchyroll.com/seraph-of-the-end-vampire-reign" src={images["sote.png"]} alt="Seraph of The End"/>
                 <GalleryImg href="http://shingekikyojin3.net/" src={images["aot.jpg"]} alt="Attack on Titan"/>
                 <GalleryImg href="http://www.crunchyroll.com/the-future-diary" src={images["mn.jpg"]} alt="Mirai Nikki"/>
             </div>

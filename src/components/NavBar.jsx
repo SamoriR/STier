@@ -52,18 +52,6 @@ const ContactItem = Item.extend`
 `;
 
 
-const NavComp = (
-  <div>
-    <Items>
-      <PageLogo><em>S-Tier</em></ PageLogo>
-      <LinkItem><Link href="https://www.netflix.com/browse">netflix</ Link></ LinkItem>
-      <LinkItem><Link href="http://www.crunchyroll.com/">crunchyroll</ Link></ LinkItem>
-      <LinkItem><Link href="https://www.hulu.com/">hulu</ Link></ LinkItem>
-      <ContactItem><Link href="https://www.linkedin.com/in/samori-roberts-phy-cs/">contact</ Link></ ContactItem>
-    </ Items>
-  </ div>
-);
-
 class NavBar extends React.Component {
   constructor(props) {
     super(props);    
@@ -71,19 +59,22 @@ class NavBar extends React.Component {
     this.scroll = this.scroll.bind(this);
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.scroll());
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.scroll());
-  }
-
   scroll(e){
-
+    e.target.style.borderColor = "black";
   }
+
   render() {
-    return NavComp;
+    return (
+      <div>
+        <Items onScroll={this.scroll}>
+          <PageLogo><em>S-Tier</em></ PageLogo>
+          <LinkItem><Link href="https://www.netflix.com/browse">netflix</ Link></ LinkItem>
+          <LinkItem><Link href="http://www.crunchyroll.com/">crunchyroll</ Link></ LinkItem>
+          <LinkItem><Link href="https://www.hulu.com/">hulu</ Link></ LinkItem>
+          <ContactItem><Link href="https://www.linkedin.com/in/samori-roberts-phy-cs/">contact</ Link></ ContactItem>
+        </ Items>
+      </ div>
+    );
   }
 }
 
