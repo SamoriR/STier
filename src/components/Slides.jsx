@@ -19,7 +19,7 @@ class Slides extends React.Component {
     componentDidMount() {
         this.timerID = setInterval(
             () => this.tick(),
-            1000
+            2000
         );
     }
 
