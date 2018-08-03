@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Items = styled.ul`
+  z-index: 1;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #27476E;
+  background-color: transparent;
   font-size: 7;
   margin-bottom: .5em;
   position: fixed;
@@ -56,23 +57,36 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props);    
     
+    this.state = {currentClass: "clearBar"};
     this.scroll = this.scroll.bind(this);
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.scroll, false);
+  }
+
   scroll(e){
-    e.target.style.borderColor = "black";
+    
+    if (window.pageYOffset > 450){
+      this.setState({currentClass: "colorBar"});
+      
+
+    } else {
+      this.setState({currentClass: "clearBar"});
+
+    }
   }
 
   render() {
     return (
       <div>
-        <Items onScroll={this.scroll}>
+        <ul className={this.state.currentClass}>
           <PageLogo><em>S-Tier</em></ PageLogo>
           <LinkItem><Link href="https://www.netflix.com/browse">netflix</ Link></ LinkItem>
           <LinkItem><Link href="http://www.crunchyroll.com/">crunchyroll</ Link></ LinkItem>
           <LinkItem><Link href="https://www.hulu.com/">hulu</ Link></ LinkItem>
           <ContactItem><Link href="https://www.linkedin.com/in/samori-roberts-phy-cs/">contact</ Link></ ContactItem>
-        </ Items>
+        </ ul>
       </ div>
     );
   }

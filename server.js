@@ -17,24 +17,25 @@ app.use(express.static(`${__dirname}/build`));
 
 app.get('/api/anime', function (req, res, next) {
     let anime = [ 
-        { Title: 'Tokyo Ghoul', ImageAsset: 'tg.jpg', Link: 'https://www.hulu.com/tokyo-ghoul' },
-        { Title: 'Seven Deadly Sins', ImageAsset: 'tsds.jpg', Link: 'http://watch7deadlysins2.net/' },
-        { Title: 'Darling In The Franxxx', ImageAsset: 'ditf.jpg', Link: 'https://otakustream.tv/anime/darling-in-the-franxx/' },
-        { Title: 'Code geass', ImageAsset: 'cg.jpeg', Link: 'http://www.crunchyroll.com/code-geass' },
+        { Title: 'My Hero Academia', ImageAsset: 'mha.jpg', Link: 'http://ww7.heroacademia2.com/' },
+        { Title: 'Code Geass', ImageAsset: 'cg.jpeg', Link: 'http://www.crunchyroll.com/code-geass' },
         { Title: 'Jojo\'s Bizarre Adventure', ImageAsset: 'sdc.jpg', Link: 'http://www.crunchyroll.com/jojos-bizarre-adventure' },
+        { Title: 'Seven Deadly Sins', ImageAsset: 'tsds.jpg', Link: 'http://watch7deadlysins2.net/' },
+        { Title: 'Tokyo Ghoul', ImageAsset: 'tg.jpg', Link: 'https://www.hulu.com/tokyo-ghoul' },
+        { Title: 'No Game No Life', ImageAsset: 'ngnl.jpg', Link: 'http://www.crunchyroll.com/no-game-no-life' },
         { Title: 'Konosuba', ImageAsset: 'kono.jpg', Link: 'http://www.crunchyroll.com/konosuba-gods-blessing-on-this-wonderful-world' },
-        { Title: 'Kimi no wa', ImageAsset: 'knw.png', Link: 'http://kissanime.xyz/watch/kimi-no-na-wa-2016-hd-720p.989OODCC.html/' },
+        { Title: 'Darling In The Franxxx', ImageAsset: 'ditf.jpg', Link: 'https://otakustream.tv/anime/darling-in-the-franxx/' },
+        { Title: 'Kimi No Wa', ImageAsset: 'knw.png', Link: 'http://kissanime.xyz/watch/kimi-no-na-wa-2016-hd-720p.989OODCC.html/' },
+        { Title: 'Kuroko No Basket', ImageAsset: 'knb.png', Link: 'http://www.crunchyroll.com/kurokos-basketball' },
         { Title: 'One Punch Man', ImageAsset: 'opm.jpg', Link: 'https://www.hulu.com/onepunch-man' },
-        { Title: 'Shokugeki no soma', ImageAsset: 'sns.jpg', Link: 'http://www.crunchyroll.com/food-wars-shokugeki-no-soma' },
+        { Title: 'Shokugeki No Soma', ImageAsset: 'sns.jpg', Link: 'http://www.crunchyroll.com/food-wars-shokugeki-no-soma' },
         { Title: 'Gate', ImageAsset: 'gate.jpg', Link: 'http://www.crunchyroll.com/gate' },
-        { Title: 'Kill la kill', ImageAsset: 'klk.jpg', Link: 'http://www.crunchyroll.com/kill-la-kill' },
-        { Title: 'Kuroko no basket', ImageAsset: 'knb.png', Link: 'http://www.crunchyroll.com/kurokos-basketball' },
-        { Title: 'No game no life', ImageAsset: 'ngnl.jpg', Link: 'http://www.crunchyroll.com/no-game-no-life' },
-        { Title: 'Devil is a part timer', ImageAsset: 'diapt.jpg', Link: 'http://www.crunchyroll.com/the-devil-is-a-part-timer/videos' },
+        { Title: 'Kill La Kill', ImageAsset: 'klk.jpg', Link: 'http://www.crunchyroll.com/kill-la-kill' },
+        { Title: 'Devil Is a Part Timer', ImageAsset: 'diapt.jpg', Link: 'http://www.crunchyroll.com/the-devil-is-a-part-timer/videos' },
         { Title: 'Bungo Stray Dogs', ImageAsset: 'bsd.jpg', Link: 'http://www.crunchyroll.com/bungo-stray-dogs' },
-        { Title: 'Seraph of the End', ImageAsset: 'sote.png', Link: 'https://www.hulu.com/seraph-of-the-end-vampire-reign' },  
+        { Title: 'Seraph of The End', ImageAsset: 'sote.png', Link: 'https://www.hulu.com/seraph-of-the-end-vampire-reign' },  
         { Title: 'Attack on Titan', ImageAsset: 'aot.jpg', Link: 'http://www.crunchyroll.com/attack-on-titan' },
-        { Title: 'Mirai Nikki', ImageAsset: 'mn.jpg', Link: 'http://www.crunchyroll.com/the-future-diary' } 
+        { Title: 'Future Diary', ImageAsset: 'mn.jpg', Link: 'http://www.crunchyroll.com/the-future-diary' }
     ];
     
     res.json(anime);

@@ -32,7 +32,7 @@ class Slides extends React.Component {
         if (current > 2){
             current = 0;
         }
-        this.setState({currentImg: bannerImgs[current]})
+        this.setState({currentImg: bannerImgs[current]});
     }
 
     render() {
