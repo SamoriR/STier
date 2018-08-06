@@ -21,7 +21,7 @@ app.get('/api/anime', function (req, res, next) {
         { Title: 'Code Geass', ImageAsset: 'cg.jpeg', Link: 'http://www.crunchyroll.com/code-geass' },
         { Title: 'Jojo\'s Bizarre Adventure', ImageAsset: 'sdc.jpg', Link: 'http://www.crunchyroll.com/jojos-bizarre-adventure' },
         { Title: 'Seven Deadly Sins', ImageAsset: 'tsds.jpg', Link: 'http://watch7deadlysins2.net/' },
-        { Title: 'Tokyo Ghoul', ImageAsset: 'tg.jpg', Link: 'https://www.hulu.com/tokyo-ghoul' },
+        { Title: 'Tokyo Ghoul', ImageAsset: 'tg.jpg', Link: 'http://tokyoghoulre.net/' },
         { Title: 'No Game No Life', ImageAsset: 'ngnl.jpg', Link: 'http://www.crunchyroll.com/no-game-no-life' },
         { Title: 'Konosuba', ImageAsset: 'kono.jpg', Link: 'http://www.crunchyroll.com/konosuba-gods-blessing-on-this-wonderful-world' },
         { Title: 'Darling In The Franxxx', ImageAsset: 'ditf.jpg', Link: 'https://otakustream.tv/anime/darling-in-the-franxx/' },
